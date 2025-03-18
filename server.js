@@ -1,5 +1,5 @@
 const express = require('express');
-const router = require('../task-manager/routes/index.js');
+const router = require('./routes/index.js');
 const connectDB = require('./config/db.js');
 const app = express();
 app.use(router);
