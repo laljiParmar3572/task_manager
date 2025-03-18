@@ -1,0 +1,1 @@
+2025-03-12T14:08:43.806Z error: error --->MongoBulkWriteError: E11000 duplicate key error collection: aggregate.update_date index: _id_ dup key: { _id: 18 }

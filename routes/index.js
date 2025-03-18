@@ -1,0 +1,11 @@
+const express=require('express');
+const authRoute=require('../routes/auth.js');
+const taskRoute=require('../routes/task.js');
+const userRoute=require('../routes/user.js');
+const ttlRouter=require('../routes/mongodb.js');
+const router=express();
+router.use(authRoute);
+router.use(userRoute);
+router.use(taskRoute);
+router.use(ttlRouter);
+module.exports=router;

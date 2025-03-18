@@ -1,0 +1,7 @@
+2025-03-11T15:31:00.580Z [31merror[39m: error --->
+2025-03-11T15:36:17.210Z [31merror[39m: error --->MongoBulkWriteError: E11000 duplicate key error collection: aggregate.update_date index: _id_ dup key: { _id: 5 }
+2025-03-12T13:46:56.886Z [31merror[39m: error --->MongoBulkWriteError: E11000 duplicate key error collection: aggregate.update_date index: _id_ dup key: { _id: 5 }
+2025-03-12T13:47:27.710Z [31merror[39m: error --->MongoBulkWriteError: E11000 duplicate key error collection: aggregate.update_date index: _id_ dup key: { _id: 8 }
+2025-03-12T13:47:51.310Z [32minfo[39m: data addded
+2025-03-12T13:53:31.619Z error: error --->MongoBulkWriteError: E11000 duplicate key error collection: aggregate.update_date index: _id_ dup key: { _id: 11 }
+2025-03-12T14:00:35.158Z error: error --->MongoBulkWriteError: E11000 duplicate key error collection: aggregate.update_date index: _id_ dup key: { _id: 11 }
