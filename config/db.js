@@ -1,9 +1,11 @@
-const mongoose=require('mongoose');
+require('dotenv').config();
+const mongoose = require('mongoose');
 
 const connectDB=async()=>{
     try{
-      const url='mongodb+srv://ral_developer:Raxu@@0609@test.sjc45.mongodb.net/?retryWrites=true&w=majority&appName=test';
-    await mongoose.connect('mongodb+srv://ral_developer:Lalji123@test.sjc45.mongodb.net/?retryWrites=true&w=majority&appName=test');
+      const uri = process.env.DB_URI.replace("${DB_PASSWORD}", process.env.DB_PASSWORD);
+
+    await mongoose.connect(uri);
     console.log('connected');
     }catch(error){
         console.log('error --->',error);
