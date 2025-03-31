@@ -4,7 +4,7 @@ dotenv.config();
 const connectDB=async()=>{
     try{
       const uri = process.env.DB_URL.replace("${DB_PASSWORD}", process.env.DB_PASSWORD);
-     print('uri is ---->',uri);
+     console.log('uri is ---->',uri);
     await mongoose.connect(uri);
     console.log('connected');
     }catch(error){
